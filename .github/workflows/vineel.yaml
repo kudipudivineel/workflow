@@ -13,4 +13,4 @@ jobs:
     needs: job
     steps:
       - name: print a name
-        run: echo "NAME"
+        run: echo "$NAME"
