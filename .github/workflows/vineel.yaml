@@ -24,4 +24,6 @@ jobs:
     needs: job
     steps:
       - name: Print environment
-        run: echo "Environment is ${{ inputs.environment }}"
+        run: | 
+          echo "Environment is ${{ inputs.environment }}"
+           echo "${{github.actor}}
