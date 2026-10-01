@@ -27,3 +27,11 @@ jobs:
         run: | 
           echo "Environment is ${{ inputs.environment }}"
           echo "${{github.ref}}"
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print git
+        uses: actions/checkout@v4
+      
+       
+    
