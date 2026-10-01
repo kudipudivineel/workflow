@@ -6,3 +6,9 @@ jobs:
     steps:
       - name: print a file
         run: echo "hi welcome"
+  build:
+    runs-on: ubuntu-latest
+    needs: job
+    steps:
+      - name: print a name
+        run: echo "vineel"
