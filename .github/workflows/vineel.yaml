@@ -26,4 +26,4 @@ jobs:
       - name: Print environment
         run: | 
           echo "Environment is ${{ inputs.environment }}"
-           echo "${{github.actor}}
+          echo "${{github.actor}}"
