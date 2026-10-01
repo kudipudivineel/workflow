@@ -1,5 +1,7 @@
 name: workflow
 on: workflow_dispatch
+env:
+  NAME: vineel
 jobs:
   job:
     runs-on: ubuntu-latest
@@ -11,4 +13,4 @@ jobs:
     needs: job
     steps:
       - name: print a name
-        run: echo "vineel"
+        run: echo "NAME"
